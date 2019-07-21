@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>BarberPal</title>
+ <link rel="stylesheet" href="css/app.css">
+ <!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/css/uikit.min.css" />
+<!-- datepicker CSS -->
+<link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/material_red.css">
+<!-- UIkit JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/js/uikit.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/js/uikit-icons.min.js"></script>
+<!-- datepicker JS -->
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+</head>
+<body>
+ <!-- header -->
+ <header class="header uk-position-fixed uk-light">
+  <nav class="uk-navbar-container uk-container uk-navbar-transparent" data-uk-navbar>
+   <div class="uk-navbar-left">
+     <a class="uk-navbar-item uk-logo uk-text-bold" href="#">Barber<span class="uk-text-danger">Pal</span></a>
+   </div>
+   <div class="uk-navbar-right uk-visible@m">
+    <ul class="uk-navbar-nav">
+     <li>
+      <a class="link-navbar" href="main-home">Home</a>
+     </li>
+     <li>
+      <a class="link-navbar" href="about">About</a>
+     </li>
+     <li>
+      <a class="link-navbar" href="services">Services</a>
+     </li>
+     <li>
+      <a class="link-navbar" href="gallery">Gallery</a>
+     </li>
+     <li>
+      <a class="link-navbar" href="prices">Prices</a>
+    </li>
+    <li>
+      <a class="link-navbar" href="contact">Contact</a>
+    </li>
+    </ul>
+   </div>
+   <div class="uk-navbar-right uk-hidden@m">
+     <button class="uk-navbar-toggle" data-uk-toggle="target: #offcanvas-slide" uk-navbar-toggle-icon type="button"></button>
+   </div>
+  </nav>
+ </header>
+ <!-- off canvas -->
+ <div id="offcanvas-slide" data-uk-offcanvas="overlay: true">
+   <div class="uk-offcanvas-bar">
+
+       <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+
+       <ul class="uk-nav-primary uk-position-center uk-text-center" data-uk-nav>
+        <li class="uk-padding-bottom">
+         <a class="link-navbar" href="main-home">Home</a>
+        </li>
+        <li>
+         <a class="link-navbar" href="about">About</a>
+        </li>
+        <li>
+         <a class="link-navbar" href="services">Services</a>
+        </li>
+        <li>
+         <a class="link-navbar" href="gallery">Gallery</a>
+        </li>
+        <li>
+          <a class="link-navbar" href="prices">Prices</a>
+        </li>
+        <li>
+          <a class="link-navbar" href="contact">Contact</a>
+        </li>
+       </ul>
+
+   </div>
+</div>
+<!-- main section -->
+<main id="main-home">
+  <!-- post-header -->
+  <section id="post-header" class="uk-section uk-background-blend-overlay uk-background-secondary uk-background-cover uk-light">
+    <div class="uk-container">
+      <div class="uk-padding-small">
+        <h1 class="uk-text-bold">Barber's barber shop</h1>
+        <p class="uk-width-large">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente alias, nisi distinctio odio libero totam atque necessitatibus fugit? Laudantium, error.</p>
+      </div>
+    </div>
+  </section>
+  <!-- about -->
+  <section id="about" class="b-section">
+    <div class="uk-container">
+      <div class="uk-padding-small">
+        <div class="uk-flex uk-child-width-1-2@m" data-uk-grid>
+          <div>
+              <h1 class="uk-title uk-text-bold">
+                About
+              </h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus iusto cupiditate nemo sequi culpa velit, quia repudiandae eveniet! Temporibus delectus fugiat vero rem vel quasi aliquid impedit dolorum fugit asperiores illo quos omnis voluptates at ut sequi, blanditiis, sed placeat similique aperiam dolore porro repellat. Nihil voluptates quam eius ipsa.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore voluptate temporibus nemo maiores illo quam, excepturi reiciendis molestias assumenda provident laudantium architecto alias sapiente recusandae rem? Laboriosam doloribus sequi expedita.
+              </p>
+          </div>
+          <div>
+            <div id="about-image">
+                <img src="img/about-barber.jpg" alt="about" title="about">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- services -->
+  <section id="services" class="b-section">
+    <div class="uk-container">
+      <div class="uk-padding-small">
+        <h1 class="uk-title uk-text-bold uk-margin-large-bottom">
+          Services
+        </h1>
+        <div class="uk-padding uk-padding-remove-horizontal uk-padding-remove-bottom">
+          <div class="uk-flex uk-child-width-1-3@m" data-uk-grid="">
+            <div>
+              <div class="uk-card-default">
+                <div class="uk-card-image">
+                  <img src="img/about-barber.jpg" alt="shaving" title="shaving">
+                </div>
+                <div class="uk-card-body">
+                  <h2 class="uk-title  uk-text-bold">
+                    Shaving
+                  </h2>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, similique nesciunt. Assumenda, perferendis autem, commodi fugiat qui quae eum distinctio, eius sit ex aliquam! Praesentium.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="uk-card-default">
+                <div class="uk-card-image">
+                  <img src="https://images.pexels.com/photos/897254/pexels-photo-897254.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="stylish-hair-cut" title="stylish-hair-cut">
+                </div>
+                <div class="uk-card-body">
+                  <h2 class="uk-title  uk-text-bold">
+                      Stylish Hair Cut
+                  </h2>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, similique nesciunt. Assumenda, perferendis autem, commodi fugiat qui quae eum distinctio, eius sit ex aliquam! Praesentium.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="uk-card-default">
+                <div class="uk-card-image">
+                  <img src="https://images.pexels.com/photos/897256/pexels-photo-897256.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="color-&-hair-wash" title="color-&-hair-wash">
+                </div>
+                <div class="uk-card-body">
+                  <h2 class="uk-title  uk-text-bold">
+                    Color & Hair Wash
+                  </h2>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, similique nesciunt. Assumenda, perferendis autem, commodi fugiat qui quae eum distinctio, eius sit ex aliquam! Praesentium.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- gallery -->
+  <section id="gallery" class="b-section">
+    <div class="uk-container">
+      <div class="uk-padding-small">
+        <h1 class="uk-title uk-text-bold uk-margin-large-bottom">
+          Gallery
+        </h1>
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" data-uk-slider>
+          <ul class="uk-slider-items uk-child-width-1-3@m uk-child-width-1-2@s uk-grid" data-uk-lightbox>
+            <li>
+              <div class="uk-panel">
+                <a class="uk-inline" href="https://images.pexels.com/photos/1319461/pexels-photo-1319461.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" data-caption="Image 1">
+                  <img src="https://images.pexels.com/photos/1319461/pexels-photo-1319461.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="img_one" title="img_one">
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="uk-panel">
+                <a class="uk-inline" href="https://images.pexels.com/photos/897251/pexels-photo-897251.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" data-caption="Image 2">
+                  <img src="https://images.pexels.com/photos/897251/pexels-photo-897251.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="img_two" title="img_two">
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="uk-panel">
+                <a class="uk-inline" href="https://images.pexels.com/photos/1570807/pexels-photo-1570807.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" data-caption="Image 3">
+                  <img src="https://images.pexels.com/photos/1570807/pexels-photo-1570807.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="img_three" title="img_three">
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="uk-panel">
+                <a class="uk-inline" href="https://images.pexels.com/photos/1805600/pexels-photo-1805600.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" data-caption="Image 4">
+                  <img src="https://images.pexels.com/photos/1805600/pexels-photo-1805600.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="uk-panel">
+                <a class="uk-inline" href="img/about-barber.jpg" data-caption="Image 5">
+                  <img src="img/about-barber.jpg" alt="">
+                </a>
+              </div>
+            </li>
+          </ul>
+          <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+          <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- prices -->
+  <section id="prices" class="b-section">
+    <div class="uk-container">
+      <div class="uk-padding-small">
+        <h1 class="uk-title uk-text-bold uk-margin-large-bottom">
+          Prices
+        </h1>
+        <div id="prices_showcase" class="uk-flex uk-child-width-1-2@m" data-uk-grid>
+          <div>
+            <div class="uk-flex uk-flex-between">
+              <div>
+                <h3 class="uk-title uk-text-capitalize">Hair Cut</h3>
+              </div>
+              <div>
+                <h3 class="uk-title uk-text-danger">10 €</h3>
+              </div>
+            </div>
+            <p class="uk-margin-remove">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, eius.</p>
+          </div>
+          <div>
+            <div class="uk-flex uk-flex-between">
+              <div>
+                <h3 class="uk-title uk-text-capitalize">Hair wash</h3>
+              </div>
+              <div>
+                <h3 class="uk-title uk-text-danger">12 €</h3>
+              </div>
+            </div>
+            <p class="uk-margin-remove">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, eius.</p>
+          </div>
+          <div>
+            <div class="uk-flex uk-flex-between">
+              <div>
+                <h3 class="uk-title uk-text-capitalize">Hair color</h3>
+              </div>
+              <div>
+                <h3 class="uk-title uk-text-danger">6 €</h3>
+              </div>
+            </div>
+            <p class="uk-margin-remove">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, eius.</p>
+          </div>
+          <div>
+            <div class="uk-flex uk-flex-between">
+              <div>
+                <h3 class="uk-title uk-text-capitalize">Hair shave</h3>
+              </div>
+              <div>
+                <h3 class="uk-title uk-text-danger">20 €</h3>
+              </div>
+            </div>
+            <p class="uk-margin-remove">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, eius.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- contact -->
+  <section id="contact" class="b-section uk-background-blend-luminosity uk-background-secondary">
+    <div class="uk-container">
+      <div class="uk-padding-small">
+        <h1 class="uk-title uk-text-bold uk-margin-large-bottom">
+          Booking
+        </h1>
+        <form action="">
+          <fieldset class="uk-fieldset">
+            <div class="uk-flex uk-child-width-1-2@m" data-uk-grid>
+              <div>
+                <input type="text" name="name" class="uk-input" placeholder="Your name">
+              </div>
+              <div>
+                <input type="email" name="email" class="uk-input" placeholder="Your email">
+              </div>
+              <div>
+                <input type="text" class="uk-input" name="phone" placeholder="Phone number">
+              </div>
+              <div>
+                <input id="datepicker" type="date" class="uk-input">
+              </div>
+            </div>
+            <div class="uk-margin uk-padding-small uk-padding-remove-horizontal">
+              <textarea name="" id="" cols="30" rows="6" class="uk-textarea" placeholder="Your note"></textarea>
+            </div>
+            <div class="uk-margin uk-text-center">
+              <button class="uk-button uk-button-danger uk-width-1-1 uk-width-1-3@m">Send</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </section>
+ </main>
+ <!-- footer -->
+ <footer class="uk-padding uk-padding-remove-horizontal uk-background-secondary uk-light">
+  <div class="uk-container">
+    <div class="uk-padding-small uk-text-center">
+      <div id="social_footer">
+        <div>
+          <a href="https://twitter.com" target="_blank" class="uk-icon-button uk-margin-small-right" data-uk-icon="twitter"></a>
+          <a href="https://www.facebook.com" target="_blank" class="uk-icon-button  uk-margin-small-right" data-uk-icon="facebook"></a>
+          <a href="https://instagram.com" target="_blank" class="uk-icon-button uk-margin-small-right" data-uk-icon="instagram"></a>
+          <a href="https://www.linkedin.com" target="_blank" class="uk-icon-button" data-uk-icon="linkedin"></a>
+        </div>
+      </div>
+      <p>BarberPal. All rights reserved. 2019</p>
+      <p class="uk-margin-remove-bottom">Made by <strong>YouDev</strong></p>
+    </div>
+  </div>
+</footer>
+ <!-- scroll to top -->
+ <button id="scrollToTop" class="uk-button">
+  <span class="uk-icon" data-uk-icon="icon: arrow-up; ratio: 1.5"></span>
+ </button>
+ <script src="js/app.js"></script>
+</body>
+</html>
